@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="field">
+  <p class="control has-icons-left">
+    <input class="input" type="password" placeholder="Buscar por nombre...">
+    <span class="icon is-small is-left">
+      <i class="fa fa-search"></i>
+    </span>
+  </p>
+</div>
+
+<div class="container">
+  <div class="columns">
+    <div class="column is-two-thirds">
+      <img src= "static/imagenes/diseno.png" >
+    </div>
+    <div class="column" style="border: solid 1px white;" >
+      
+        
+          <div class="is-align-self-center is-justify-content-center" style="height: 50%;">          <a href="{{ url_for('main.cargar') }}">
+          
+            <i class="fa fa-upload fa-5x is-margin"></i>
+          </a></div>
+
+        
+
+        <div class="is-align-self-center">  
+          <a href="{{ url_for('main.crud') }}">
+          
+            <i class="fa fa-eye fa-5x"></i>
+          </a>
+        </div>
+
+        
+
+
+                   
+    </div>
+
+  </div>
+</div>
+
+  
+
+  
+    
+  
+ 
+{% endblock %}
